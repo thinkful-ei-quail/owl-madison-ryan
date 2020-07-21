@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Participants from './Participants';
+import Stage from './Stage';
 
 function App(props) {
   return (
@@ -9,12 +10,14 @@ function App(props) {
     <h1>Owl App</h1>
     </header>
     <main className='App'>
-     <div>
-      <Participants 
-        name = {Participants.name}
+      <div className="participants"><Participants /></div>
+      
         
-      />
-     </div>
+      
+      <div className="stage">
+        <Stage />
+        
+      </div>
     </main>
     </div>
   );
