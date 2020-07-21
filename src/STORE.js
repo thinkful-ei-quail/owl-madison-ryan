@@ -19,7 +19,7 @@ const participants = [
       id: 3,
       name: 'Axe Kubicka',
       avatar: 'https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1',
-      inSession: false,
+      inSession: true,
       onStage: false
   },
   {
@@ -27,7 +27,7 @@ const participants = [
       name: 'Frank Runciman',
       avatar:
           'https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1',
-      inSession: true,
+      inSession: false,
       onStage: false
   },
   {

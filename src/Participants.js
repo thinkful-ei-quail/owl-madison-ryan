@@ -5,8 +5,10 @@ import participants from './STORE';
 export default function Participants (props) {
 
     let participantList = participants.map((participant) => {
-        let onStageStatus = participant.onStage && ' - on stage';
+        if(participant.inSession) {
 
+        let onStageStatus = participant.onStage && ' - on stage';
+       
         // if (participant.onStage) {
         //     onStageStatus = 'on stage'
         // }
@@ -15,7 +17,8 @@ export default function Participants (props) {
              <img className ="avatar-pic" src={participant.avatar} alt="avatar"/>
             {participant.name}
             {onStageStatus}
-            </div>;
+            </div>
+        }
     })
 
     return (
