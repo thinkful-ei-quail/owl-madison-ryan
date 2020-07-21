@@ -11,8 +11,6 @@ function App(props) {
     <main className='App'>
      <div>
       <Participants 
-        name = {Participants.name}
-        
       />
      </div>
     </main>

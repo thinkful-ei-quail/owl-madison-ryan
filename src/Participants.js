@@ -7,6 +7,8 @@ export default function Participants (props) {
     let participantList = participants.map((participant) => {
         if(participant.inSession) {
 
+        }
+
         let onStageStatus = participant.onStage && ' - on stage';
        
         // if (participant.onStage) {
@@ -18,7 +20,6 @@ export default function Participants (props) {
             {participant.name}
             {onStageStatus}
             </div>
-        }
     })
 
     return (
