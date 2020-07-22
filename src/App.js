@@ -1,19 +1,20 @@
 import React from 'react';
+import Stage from './components/Stage';
+import Sidebar from './components/Sidebar'
 
-import Participants from './Participants';
+// import ChatLog from './ChatLog';
 
-function App(props) {
+
+function App({store}) {
   return (
-    <div>
-         <header>
-    <h1>Owl App</h1>
-    </header>
-    <main className='App'>
-     <div>
-      <Participants 
+    <div className="App">
+      <Sidebar 
+        participants = {store.participants}
+        chatEvents = {store.chatEvents} 
       />
-     </div>
-    </main>
+      <Stage 
+         participants = {store.participants}
+      />
     </div>
   );
 }
