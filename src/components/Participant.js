@@ -1,9 +1,10 @@
 import React from 'react';
+import './Participant.css';
 
 const Participant = ({name, avatar, inSession, onStage}) => {
     return (
         <div className="participant">
-            <img src={avatar} className="avatar" alt="avatar"/>
+            <img src={avatar} className="avatar-in-session" alt="avatar"/>
             <div className="info">
                 <h3>{name}</h3>
                 <p>{inSession ? 'in session' : ''}</p>

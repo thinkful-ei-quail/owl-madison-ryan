@@ -1,0 +1,15 @@
+.chatLog {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.participant-chat {
+  width: 80%;
+}
+
+.participant-chat > * {
+  margin: 10px;
+  line-height: 20px;
+}
+

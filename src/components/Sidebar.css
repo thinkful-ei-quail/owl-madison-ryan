@@ -1,0 +1,17 @@
+.sidebar {
+  border: 3px solid green;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar > * {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 12px;
+  
+}
+.sidebar p {
+  color: green;
+}

@@ -1,0 +1,14 @@
+.participant {
+  display: flex;
+  margin: 20px;
+}
+
+.avatar-in-session {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid violet;
+}
+
+.info {
+  margin-left: 10px;
+}

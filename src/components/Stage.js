@@ -1,5 +1,7 @@
 import React from 'react';
 import StageParticipant from './StageParticipant';
+import './Stage.css'
+import Participant from './Participant';
 
 const Stage = ({participants}) => {
     return ( 
@@ -9,6 +11,7 @@ const Stage = ({participants}) => {
                     return <StageParticipant
                         key={participant.id}
                         name={participant.name}
+                        avatar={participant.avatar}
                     />
                 } else {
                     return;

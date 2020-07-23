@@ -5,7 +5,7 @@ import React from 'react';
 const MessageText = ({participant, type, message, time, timestamp}) => {
   const currentMessage = () => {
     if (type === 'message') {
-      return <h3>{`${message} at ${new Date(timestamp)}`}</h3>;
+      return <p>{`${message} at ${new Date(timestamp)}`}</p>;
     } else if (type === 'leave') {
         return <h3>{`${participant.name} left at ${new Date(timestamp)}`}</h3>;
     } else {
@@ -13,8 +13,8 @@ const MessageText = ({participant, type, message, time, timestamp}) => {
     }
   };
   return (
-    <div className="participant">
-      <img className="avatar" src={participant.avatar} alt="avatar"/>
+    <div className="participant-chat">
+      <img className="avatar-chat" src={participant.avatar} alt="avatar"/>
       <h2>{participant.name}</h2>
       {currentMessage()}
     </div>

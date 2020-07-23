@@ -1,11 +1,11 @@
 import React from 'react';
 import MessageText from  './MessageText';
 
-
+import './ChatLog.css'
 const ChatLog = ({chatList, participants}) => {
   console.log(chatList, participants, 'strigs')
   return (
-    <div>
+    <div class="chatLog">
     {chatList.map((chat, index) => {
       
       let participant;

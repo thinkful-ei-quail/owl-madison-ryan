@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ChatLog from './ChatLog';
 import ParticipantList from './ParticipantList'
 
+import './Sidebar.css'
+
 export default class Sidebar extends Component {
   state = {
     chatShow: false
